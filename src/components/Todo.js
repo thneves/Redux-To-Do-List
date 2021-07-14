@@ -1,5 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
+import '../index.css'
 
 const Todo = ({ todo }) => (
   <li

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css'
 
 class AddTodo extends React.Component {
   constructor(props) {

@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
-import { VISIBILITY_FILTERS } from './constants';
+import { VISIBILITY_FILTERS } from '../constants';
+import '../index.css';
 
 const VisibilityFilters = ({ activeFilter }) => {
   return (
@@ -11,11 +12,12 @@ const VisibilityFilters = ({ activeFilter }) => {
           <span
             key={`visibility-filter-${currentFilter}`}
             className={cx(
-              "filter", currentFilter === activeFilter && "filter--active"
+              "filter",
+               currentFilter === activeFilter && "filter--active"
             )}
             onClick={() => {} /** waiting fore setFilter handler */}
           >
-          {currentFilter}
+            {currentFilter} 
           </span>
         )
       })} 
