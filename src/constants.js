@@ -3,3 +3,5 @@ export const VISIBILITY_FILTERS = {
   COMPLETED: 'completed',
   INCOMPLETE: 'incomplete'
 };
+
+// just holds contant datas of the app.

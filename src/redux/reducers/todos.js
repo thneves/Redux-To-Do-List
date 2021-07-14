@@ -5,8 +5,11 @@ const initialState = {
   byIds: {}
 };
 
-export default function(state = initialState, action) {
+
+
+export default function todosReducer(state = initialState, action) {
   switch(action.type) {
+    // This reducer appends the id to its allIds fields and sets the todo within its byids field upon receiving the ADD_TODO action.
     case actions.ADD_TODO: {
       const { id, content } = action.payload;
       return {
@@ -21,6 +24,7 @@ export default function(state = initialState, action) {
         }
       }
     };
+    // Toggles the completed field for the todo upon receiving the TOGGLE_TODO action
     case actions.TOGGLE_TODO: {
       const { id } = action.payload;
       return {

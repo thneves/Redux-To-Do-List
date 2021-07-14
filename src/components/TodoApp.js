@@ -15,3 +15,5 @@ export default function TodoApp() {
     </div>
   )
 }
+
+// Entry component of the App, it renders the header, AddTodo, TodoList and VisibilityFilters components
